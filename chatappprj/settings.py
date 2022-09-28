@@ -28,8 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'wcechats.herokuapp',
-    'wcechatsapp.herokuapp'
+    'https://wcechats.herokuapp.com/',
+    'https://wcechatsapp.herokuapp.com/'
 ]
 
 
