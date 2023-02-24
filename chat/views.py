@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Room, Message
 from django.http import HttpResponse, JsonResponse
-
+# from .forms import ImageForm
 def home(request):
     return render(request, 'home.html')
 
@@ -39,3 +39,7 @@ def getMessages(request,  room):
     room_details = Room.objects.get(name=room)
     messages = Message.objects.filter(room=room_details.id)
     return JsonResponse({"messages": list(messages.values())})
+# def sendImage(request, room):
+#     form = ImageForm()
+#     return render(request,'sendImage.html', {'form':form})
+    

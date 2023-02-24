@@ -9,4 +9,6 @@ class Message(models.Model):
     date = models.DateTimeField(default=datetime.now, blank=True)
     room = models.CharField(max_length=1000000)
     user = models.CharField(max_length=1000000)
-    # Main_Img = models.ImageField(upload_to='images/')
+# class ImageSend(models.Model):
+#     Main_Img = models.ImageField(upload_to="images/")
+#     date = models.DateTimeField(default=datetime.now, blank=True)
